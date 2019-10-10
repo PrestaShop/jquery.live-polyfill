@@ -1,7 +1,7 @@
 {
   "name": "jquery.live-polyfill",
   "version": "1.0.0",
-  "description": "A jquery polyfill for the old $.live() method",
+  "description": "A jquery polyfill for the old, removed $.live() method",
   "main": "dist/jquery.live-polyfill.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

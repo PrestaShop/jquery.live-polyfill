@@ -1,1 +1,0 @@
-jQuery.fn.extend({live:function(e,n){return this.selector&&jQuery(document).on(e,this.selector,n),console.warn("jQuery.live() has been removed since jquery v1.9, please use jQuery.on() instead."),this}});

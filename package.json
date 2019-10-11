@@ -2,7 +2,7 @@
   "name": "@prestashop-core/jquery.live-polyfill",
   "version": "1.0.0",
   "description": "A jquery polyfill for the old, removed $.live() method",
-  "main": "dist/jquery.live-polyfill.js",
+  "main": "dist/jquery.live-polyfill.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

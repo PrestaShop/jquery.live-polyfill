@@ -1,5 +1,5 @@
 {
-  "name": "jquery.live-polyfill",
+  "name": "@prestashop-core/jquery.live-polyfill",
   "version": "1.0.0",
   "description": "A jquery polyfill for the old, removed $.live() method",
   "main": "dist/jquery.live-polyfill.js",

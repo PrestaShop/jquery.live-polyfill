@@ -1,8 +1,8 @@
 /*!
- * https://github.com/PrestaShop/jquery.live-polyfill
- *
- * Released under the MIT license
- */
+  * https://github.com/PrestaShop/jquery.live-polyfill
+  *
+  * Released under the MIT license
+  */
 ;(function (factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
@@ -19,18 +19,18 @@
   var oldInit = $.fn.init
 
   $.fn.init = function(selector) {
-	var args = Array.prototype.slice.call(arguments);
+    var args = Array.prototype.slice.call(arguments);
 
-	if (typeof selector === 'string' && selector === '#') {
-	  // JQuery( "#" ) is a bogus ID selector, but it returned an empty set before jQuery 3.0
-	  migrateWarn('jQuery(\'#\') is not a valid selector');
-	  args[ 0 ] = [];
-	}
+    if (typeof selector === 'string' && selector === '#') {
+      // JQuery( "#" ) is a bogus ID selector, but it returned an empty set before jQuery 3.0
+      migrateWarn('jQuery(\'#\') is not a valid selector');
+      args[0] = [];
+    }
 
-	ret = oldInit.apply(this, arguments);
-	ret.selector = typeof selector === 'string' ? selector : '';
+    var ret = oldInit.apply(this, arguments);
+    ret.selector = typeof selector === 'string' ? selector : '';
 
-	return ret;
+    return ret;
   };
 
   $.fn.init.prototype = $.fn;

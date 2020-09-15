@@ -23,7 +23,7 @@
 
     if (typeof selector === 'string' && selector === '#') {
       // JQuery( "#" ) is a bogus ID selector, but it returned an empty set before jQuery 3.0
-      migrateWarn('jQuery(\'#\') is not a valid selector');
+      console.warn('jQuery(\'#\') is not a valid selector');
       args[0] = [];
     }
 
